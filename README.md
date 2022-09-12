@@ -1,14 +1,14 @@
-# slush-justice
+# jugs-vue
 
 [![Build Status](https://github.com/nathanielinman/jugs-vue/workflows/Node.js%20CI/badge.svg)](https://github.com/nathanielinman/jugs-vue/actions)
 
-Vue app generator **JUGS-VUE** makes getting started with VueJS easy!
+Vue 3 app generator **JUGS-VUE** makes getting started with VueJS easy!
 
-- **Vue + VueRouter** : *Modern SPA framework inspired by React and Angular*
+- **Vue3 + VueRouter** : *Modern SPA framework inspired by React and Angular*
 - **Vue Hot Reload API** : *Live reloading system*
-- **Vuex** : *Flux data management. Multiple stores, single dispatcher, no clumsy reducers*
-- **Buefy** : *Modern component library extension of Bulma*
-- **Parcel** : *Project compilation, module bundler, uglifier, etc.*
+- **Pinia** : *Flux data management. Multiple stores, single dispatcher, no clumsy reducers*
+- **PrimeVUE** : *Vue3 compatible modern component library*
+- **Vite.js** : *Project compilation, module bundler, uglifier, etc.*
 - **Babel** : *Modern JS to ES5 compiler formerly called 6to5*
 - **Pug** : *Templating system made easy*
 - **Stylus** : *Powerful CSS Preprocessor with a beautiful syntax*
@@ -69,7 +69,7 @@ project
 This boilerplate of mine is just a combination of great tools, all credit goes to
 those who actually put in all the hard work to create them.
 
-- [Parcel][7] has been an instrumental boost in productivity and clean code, allowing the
+- [Vite.js][7] has been an instrumental boost in productivity and clean code, allowing the
   the use of the ES2015 module system. Moving from webpack has greatly improved speed
 - Though [Pug][1] (formerly Jade,) has been seen predominately as a server-side helper
   for templating, I find it incredibly helpful on front-end projects where I'm using a
@@ -100,4 +100,4 @@ those who actually put in all the hard work to create them.
 [4]:https://github.com/postcss/autoprefixer
 [5]:http://eslint.org
 [6]:https://github.com/babel/babel
-[7]:https://parceljs.org/
+[7]:https://vitejs.dev/

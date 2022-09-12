@@ -1,50 +1,49 @@
 <template lang="pug">
-section.section
+main: .pt-5.card.flex.flex-wrap.align-items-center.justify-content-center
   .container
-    h1.title Welcome {{name}} to Slush Justice!
+    h1.text-2xl Welcome {{name}} to Slush Justice!
     hr
     p.
       This generator helps set you up for a SPA written in modern javascript
       with the Vue framework.
     hr
-    h3.subtitle Technologies
-    span.bold PUG
+    h3.text-xl.font-light Technologies
+    span.font-bold PUG
     span : template preprocessing
     br
-    span.bold Stylus
+    span.font-bold Stylus
     span : style preprocessing
     br
-    span.bold PostCSS
+    span.font-bold PostCSS
     span : style optimizer used for autoprefixer
     br
-    span.bold Vue + Vue-Router
+    span.font-bold Vue + Vue-Router
     span : Modern SPA framework with mix of React/Angular technologies
     br
-    span.bold Vuex
+    span.font-bold Vuex
     span : Flux data management. Multiple stores, single dispatcher, no clumsy reducers
     br
-    span.bold Parcel
+    span.font-bold Parcel
     span : Project compilation, module bundler, uglifier, etc.
     br
-    span.bold Buefy
+    span.font-bold Buefy
     span : Vue component library extension of Bulma style library
     br
-    span.bold Vue Hot Reload API
+    span.font-bold Vue Hot Reload API
     span : Auto-reload and update
     br
-    span.bold Babel
+    span.font-bold Babel
     span : Use modern javascript now and polyfill for older browsers.
 </template>
 <script>
-import Vuex from 'vuex';
-
-const {mapActions,mapGetters,mapMutations,mapState} = Vuex;
+import { mapState } from 'pinia';
+import { usersStore } from '../stores/';
 
 // Prepare the main template
 export default {
-  name: 'Dashboard',
+  name: 'DashboardIndex',
   computed: {
-    ...mapState('user',['name'])
+    ...mapState(usersStore, ['name'])
   }
 };
 </script>
