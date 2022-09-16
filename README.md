@@ -10,7 +10,7 @@ Vue 3 app generator **JUGS-VUE** makes getting started with VueJS easy!
 - **PrimeVUE** : *Vue3 compatible modern component library*
 - **Vite.js** : *Project compilation, module bundler, uglifier, etc.*
 - **Babel** : *Modern JS to ES5 compiler formerly called 6to5*
-- **Pug** : *Templating system made easy*
+- **Pug (Optional)** : *Templating system made easy*
 - **Stylus** : *Powerful CSS Preprocessor with a beautiful syntax*
 
 ## Table of Contents
@@ -47,19 +47,17 @@ And just like that, you're on the way to making your app!
 project
 ├─dist
 │ └─ <-(assets copied here on compile)
+├─ public
+│ └─ (imgs/html/pdf/other go here)
 ├─ src
-│ ├─assets
-│ │ └─ (imgs/html/pdf/other go here)
-│ ├─routes
-│ │ ├─help
-│ │ │ ├─index.js (route index file)
-│ │ │ └─HelpIndex.vue (help page controller)
-│ │ └─Dashboard.vue (landing page controller)
+│ ├─ routes
+│ │ ├─ HelpIndex.vue (help page controller)
+│ │ └─ Dashboard.vue (landing page controller)
 │ ├─ routes.js (all route initialization)
 │ ├─ App.vue (the root vue page component)
 │ ├─ index.styl (app-wide stylus file)
-│ ├─ index.pug (app html file)
 │ └─ index.js (app initializaiton of vue instance)
+├─ index.html (main entrance html)
 ├─ package.json
 └─ readme.md
 ```
