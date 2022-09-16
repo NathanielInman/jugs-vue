@@ -3,6 +3,7 @@
   "version": "4.1.0",
   "description": "Vue app generator jugs-vue makes getting started easy!",
   "license": "MIT",
+  "type": "module",
   "author": {
     "name": "Nathaniel Inman",
     "email": "nate@theoestudio.com"
@@ -18,7 +19,9 @@
     "url": "git://github.com/NathanielInman/jugs-vue.git"
   },
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint --ext .js ./"
+  },
   "keywords": [
     "esnext",
     "module",
@@ -46,8 +49,11 @@
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-conflict": "^0.4.0",
+    "gulp-filter": "^7.0.0",
     "gulp-install": "^1.1.0",
     "gulp-rename": "^2.0.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-tap": "^2.0.0",
     "gulp-template": "^5.0.0",
     "iniparser": "^1.0.5",
     "inquirer": "^9.1.1"
@@ -56,5 +62,13 @@
     "url": "https://github.com/NathanielInman/jugs-vue/issues"
   },
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/NathanielInman/jugs-vue"
+  "homepage": "https://github.com/NathanielInman/jugs-vue",
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.1"
+  }
 }
