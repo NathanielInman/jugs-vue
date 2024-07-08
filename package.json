@@ -56,7 +56,7 @@
     "gulp-tap": "^2.0.0",
     "gulp-template": "^6.0.0",
     "iniparser": "^1.0.5",
-    "inquirer": "^9.1.1"
+    "inquirer": "^10.0.0"
   },
   "bugs": {
     "url": "https://github.com/NathanielInman/jugs-vue/issues"
