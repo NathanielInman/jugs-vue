@@ -64,7 +64,7 @@
   "readmeFilename": "README.md",
   "homepage": "https://github.com/NathanielInman/jugs-vue",
   "devDependencies": {
-    "eslint": "^8.23.1",
+    "eslint": "^9.20.1",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^16.0.0",
